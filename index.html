@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- menu com os botões-->
+    <nav class="menu">
+        <button onclick="mostrarSecao('sobre')">Sobre mim</button>
+        <button onclick="mostrarSecao('formacao')">Formação</button>
+        <button onclick="mostrarSecao('portfolio')">Portfólio</button>
+        <button onclick="mostrarSecao('contato')">Contato</button>
+    </nav>
+
+    <!-- conteúdo de cada botão -->
+    <section id="sobre" class="conteudo">
+        <h1>Sobre mim</h1>
+        <p>Sou uma pessoa apaixonada por atividades diversas, como assistir filmes, ir ao cinema e passear em shoppings. Também gosto de passar o tempo em casa realizando tarefas cotidianas, aproveitando momentos com a família, e reservando um tempo para mim mesma. Minhas paixões incluem a leitura, a tecnologia e o aprendizado constante. Tenho uma ampla experiência em diferentes áreas profissionais, desde atendimento ao cliente e recepção até design gráfico e suporte administrativo. Sou organizada, pró-ativa e gosto de contribuir para um ambiente de trabalho colaborativo.</p>
+    </section>
+
+     <!-- minha formação -->
+    <section id="formacao" class="conteudo" style="display: none;">
+        <h1>Formação</h1>
+        <p>Possuo formação em Logística pela Faculdade Anchieta, um curso técnico em Administração pela ETEC Lauro Gomes e atualmente estou cursando Análise e Desenvolvimento de Sistemas pela UNINTER. Também realizei diversos cursos extracurriculares nas áreas de Marketing Digital, E-commerce, UX Design, Excel avançado, e administração de CRM. Falo inglês e espanhol em nível básico e sou habilidosa em uma variedade de softwares, incluindo o pacote Microsoft Office, ferramentas Adobe Creative, Visual Studio Code, e linguagens de programação como HTML, CSS e JavaScript.</p>
+    </section>
+
+       <!-- meu portifólio -->
+    <section id="portfolio" class="conteudo" style="display: none;">
+        <h1>Portfólio</h1>
+        <p>Confira alguns dos meus trabalhos:</p>
+        <ul>
+            <li><a href="https://cristianecrolim.portfoliobox.net/" target="_blank">Portfoliobox</a></li>
+            <li><a href="https://pontocriativo.myportfolio.com" target="_blank">Adobe Portfolio</a></li>
+        </ul>
+    </section>
+
+   <!-- contato com formulário -->
+    <section id="contato" class="conteudo" style="display: none;">
+        <h1>Contato</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="5" required></textarea><br><br>
+            
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
